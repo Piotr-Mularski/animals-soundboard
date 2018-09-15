@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<title>Animals Sounds Player</title>
+	<meta name="description" content="">
+	<meta name="author" content="Piotr Mularski">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet"> 
+	<link rel="stylesheet" href="assets/styles/main.css">
+	<link rel="shortcut icon" href="">
+</head>
+<body>
+	<div class="container">
+		<header><h1 class="title">ANIMALS SOUNDS</h1></header>
+		<main class="main">
+			<div class="animals-row">
+				<div class="animal" data-key="c">
+					<img class="animal__image animal__image--cat" src="assets/images/animals/cat.png" alt="cat image" height="170">
+					<h2 class="animal__name"><span class="special-key">C</span>AT</h2>
+				</div>
+				<div class="animal" data-key="d">
+					<img class="animal__image animal__image--dog" src="assets/images/animals/dog.png" alt="dog image" height="170">
+					<h2 class="animal__name"><span class="special-key">D</span>OG</h2>
+				</div>
+				<div class="animal" data-key="l">
+					<img class="animal__image animal__image--lion" src="assets/images/animals/lion.png" alt="lion image" height="170">
+					<h2 class="animal__name"><span class="special-key">L</span>ION</h2>
+				</div>
+				<div class="animal" data-key="o">
+					<img class="animal__image animal__image--cow" src="assets/images/animals/cow.png" alt="cow image" height="170">
+					<h2 class="animal__name">C<span class="special-key">O</span>W</h2>
+				</div>
+			</div>
+			<div class="animals-row">
+				<div class="animal" data-key="u">
+					<img class="animal__image animal__image--duck" src="assets/images/animals/duck.png" alt="duck image" height="170">
+					<h2 class="animal__name">D<span class="special-key">U</span>CK</h2>
+				</div>
+				<div class="animal" data-key="p">
+					<img class="animal__image animal__image--pig" src="assets/images/animals/pig.png" alt="pig image" height="170">
+					<h2 class="animal__name"><span class="special-key">P</span>IG</h2>
+				</div>
+				<div class="animal" data-key="e">
+					<img class="animal__image animal__image--elephant" src="assets/images/animals/elephant.png" alt="elephant image" height="170">
+					<h2 class="animal__name"><span class="special-key">E</span>LEPHANT</h2>
+				</div>
+				<div class="animal" data-key="m">
+					<img class="animal__image animal__image--monkey" src="assets/images/animals/monkey.png" alt="monkey image" height="170">
+					<h2 class="animal__name"><span class="special-key">M</span>ONKEY</h2>
+				</div>
+			</div>
+		</main>
+		
+		<footer>
+			<p>
+				Images sources: Background image <a href="http://www.freepik.com">designed by brgfx / Freepik</a>, animals images <a href="http://www.freepik.com">designed by Freepik</a>
+			</p>
+			<p>
+				Sounds sources: Cow, Chimpanzee, Duck, Elephant, Lion, Pig, - <a href="http://soundbible.com">Mike Koenig</a>, Cat - <a href="http://soundbible.com">Mr Smith</a>, Dog - <a href="http://soundbible.com">Daniel Simon</a>
+			</p>
+			<p>Created by <a href="https://piotr-mularski.github.io/online-resume">Piotr Mularski</a></p>
+		</footer>
+	</div>
+
+	<audio data-key="c">
+		<source src="assets/sounds/cat.mp3" type="audio/mp3">
+		<source src="assets/sounds/cat.wav" type="audio/wav">
+	</audio>
+	<audio data-key="m">
+		<source src="assets/sounds/chimpanzee.mp3" type="audio/mp3">
+		<source src="assets/sounds/chimpanzee.wav" type="audio/wav">
+	</audio>
+	<audio data-key="o">
+		<source src="assets/sounds/cow.mp3" type="audio/mp3">
+		<source src="assets/sounds/cow.wav" type="audio/wav">
+	</audio>
+	<audio data-key="d">
+		<source src="assets/sounds/dog.mp3" type="audio/mp3">
+		<source src="assets/sounds/dog.wav" type="audio/wav">
+	</audio>
+	<audio data-key="u">
+		<source src="assets/sounds/duck.mp3" type="audio/mp3">
+		<source src="assets/sounds/duck.wav" type="audio/wav">
+	</audio>
+	<audio data-key="e">
+		<source src="assets/sounds/elephant.mp3" type="audio/mp3">
+		<source src="assets/sounds/elephant.wav" type="audio/wav">
+	</audio>
+	<audio data-key="l">
+		<source src="assets/sounds/lion.mp3" type="audio/mp3">
+		<source src="assets/sounds/lion.wav" type="audio/wav">
+	</audio>
+	<audio data-key="p">
+		<source src="assets/sounds/pig.mp3" type="audio/mp3">
+		<source src="assets/sounds/pig.wav" type="audio/wav">
+	</audio>
+	<script type="text/javascript" src="assets/scripts/main.js"></script>
+</body>
+</html>
