@@ -5,16 +5,15 @@ animals.forEach(animal => {
 		const key = this.dataset["key"];
 		playAudio(key);
 	});
+	
 	animal.addEventListener('transitionend', function(e) {
 		if(e.propertyName !== 'transform') {
 			return;
 		} else {
-			console.log(this)
 			this.classList.remove('animal--playing');
 		}
 	})
 });
-
 
 
 window.addEventListener('keypress', (e) => {
